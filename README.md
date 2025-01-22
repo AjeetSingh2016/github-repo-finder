@@ -1,6 +1,5 @@
 Here is the complete `README.md` content in Markdown format:
 
-```markdown
 # GitHub Repository Finder
 
 This project allows users to explore GitHub repositories by filtering and searching through them based on different criteria like programming language and issue labels. Users can dynamically view repository details, contributors, open issues, and pull requests. The app utilizes the GitHub API to fetch data and displays it in an easy-to-use interface built with Next.js and styled with Tailwind CSS.
