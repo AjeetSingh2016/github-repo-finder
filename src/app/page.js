@@ -28,12 +28,12 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-6">
-      <h1 className="text-4xl font-bold text-center text-gray-900 mb-6">
+    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 w-full">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-6">
         GitHub Finder for Open Source Contributors
       </h1>
       <div className="max-w-4xl mx-auto space-y-6">
-        <div className="flex justify-center gap-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
           <LanguageDropdown
             selectedLanguage={selectedLanguage}
             setSelectedLanguage={setSelectedLanguage}
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center">
           <button
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
+            className="bg-blue-600 text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out"
             onClick={fetchRepositories}
           >
             {loading ? 'Fetching...' : 'Find Repositories'}
@@ -58,7 +58,7 @@ export default function Home() {
       {/* Loader when fetching */}
       {loading && (
         <div className="flex justify-center mt-8">
-          <div className="animate-spin rounded-full border-t-4 border-blue-600 w-16 h-16"></div>
+          <div className="animate-spin rounded-full border-t-4 border-blue-600 w-12 h-12 sm:w-16 sm:h-16"></div>
         </div>
       )}
     </div>

@@ -1,10 +1,10 @@
 export default function Filters({ filters, setFilters }) {
   return (
-    <div className="relative">
+    <div className="relative w-full sm:w-64">
       <select
         value={filters.label}
         onChange={(e) => setFilters({ label: e.target.value })}
-        className="block w-64 px-4 py-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-800"
+        className="block w-full sm:w-64 px-4 py-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-800 bg-white"
       >
         <option value="any">Any</option>
         <option value="good-first-issue">Good First Issue</option>
